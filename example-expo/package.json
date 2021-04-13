@@ -6,16 +6,18 @@
   "scripts": {
     "e2e:init": "./e2e/init.sh 2.3.0",
     "test:e2e": "exp r -c & detox test -c ios.sim; pkill -f exp",
-    "cleaning":
-      "watchman watch-del-all && rm -f yarn.lock && rm -rf node_modules && rm -rf $TMPDIR/react-* && yarn cache clean"
+    "cleaning": "watchman watch-del-all && rm -f yarn.lock && rm -rf node_modules && rm -rf $TMPDIR/react-* && yarn cache clean",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
-    "expo": "^25.0.0",
-    "react": "16.2.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
+    "expo": "^28.0.0",
+    "react": "16.5.0",
+    "react-native": "0.64.0",
     "react-native-gifted-chat": "FaridSafi/react-native-gifted-chat",
     "react-native-nav": "2.0.2",
-    "sentry-expo": "1.7.0"
+    "sentry-expo": "2.0.0",
+    "snyk": "^1.538.0"
   },
   "devDependencies": {
     "appr": "xcarpentier/appr",
@@ -33,5 +35,6 @@
         "name": "iPhone 7"
       }
     }
-  }
+  },
+  "snyk": true
 }
