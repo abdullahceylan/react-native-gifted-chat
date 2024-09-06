@@ -65,11 +65,11 @@
     "prop-types": "15.6.2"
   },
   "dependencies": {
-    "@expo/react-native-action-sheet": "^1.0.1",
+    "@expo/react-native-action-sheet": "^3.0.0",
     "moment": "^2.19.0",
     "react-native-communications": "2.2.1",
-    "react-native-lightbox": "^0.7.0",
-    "react-native-parsed-text": "^0.0.20",
+    "react-native-lightbox": "^0.8.1",
+    "react-native-parsed-text": "^0.0.22",
     "uuid": "3.3.0"
   },
   "peerDependencies": {
